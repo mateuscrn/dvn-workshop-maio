@@ -17,6 +17,18 @@
                 "--metadata",
                 "AWS_REGION=us-east-1"
             ]
+        },
+        "awslabs.eks-mcp-server": {
+            "command": "uv",
+            "args": [
+                "awslabs.eks-mcp-server@0.1.20",
+                "--allow-write",
+                "--allow-sensitive-data-access"
+            ],
+            "env": {
+                "AWS_PROFILE": "workshopMayProfile",
+                "FASTMCP_LOG_LEVEL": "ERROR"
+            }
         }
     }
 }
